@@ -43,7 +43,9 @@ function ThemeHotkey() {
         return
       }
 
-      if (event.metaKey || event.ctrlKey || event.altKey) {
+      // A bare "d" fires constantly in a table-heavy CRM, where focus often
+      // sits on a row or cell rather than an input. Require a modifier.
+      if (!(event.metaKey || event.ctrlKey) || !event.shiftKey) {
         return
       }
 
