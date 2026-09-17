@@ -42,3 +42,8 @@ next-env.d.ts
 context-practice-files/
 .vercel
 .env*
+
+# client material — lives outside the repo (../Orti-docs)
+docs/
+TODO.md
+WORK_LOG.md
